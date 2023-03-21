@@ -6,8 +6,8 @@ exports.seed = async function(knex) {
   // Deletes ALL existing entries
   await knex('movies').del()
   await knex('movies').insert([
-    {id: 1, title: 'cool movie',genre: 'comedy',release_date:'1997-09-03'},
-    {id: 2, title: 'cool movie 2',genre: 'drama',release_date:'2001-02-03'},
-    {id: 3, title: 'whatever',genre: 'action',release_date:'2003-08-02'}
+    {id: 1, title: 'Vicky Cristina Barcelona', genre: 'drama', release_date: '2008-08-15'},
+    {id: 2, title: 'Orfeu Negro', genre: 'drama', release_date: '1959-12-21'},
+    {id: 3, title: 'Midnight in Paris', genre: 'drama', release_date: '2011-05-20'},
   ]);
 };
